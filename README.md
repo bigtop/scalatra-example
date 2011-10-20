@@ -1,13 +1,25 @@
-1. Launch [SBT](http://code.google.com/p/simple-build-tool).
+Bigtop / Scalatra example
+=========================
 
-        ./sbt
+This example demonstrates the use of [Bigtop Routes] within a [Scalatra] application.
 
-2. Run Jetty
+Running the code
+================
 
-        jetty-run
+You should be able to get this up and running with the following code:
 
-3. Go to http://localhost:8080/.
+    git clone git@github.com/bigtop/scalatra-example.git bigtop-scalatra-example
+    cd bigtop-scalatra-example
+    ./sbt jetty-run ~prepare-webapp
 
-4. Learn more at http://www.scalatra.org/stable/book.
+Key files
+=========
 
-5. Happy hacking!
+The important files in this demo are:
+
+ - `ExampleServlet.scala` - your trusty ScalatraServlet;
+ - `ExampleSite.scala` - Routes Site object.
+
+[Bigtop Routes]: http://bigtopweb.com/routes/
+[Scalatra]: https://github.com/scalatra/scalatra
+
